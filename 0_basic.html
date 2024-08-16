@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function greets(name){
+        if(name=="A")
+            greet="Hello A";
+        else
+            greet="Hi";
+        console.log(greet);
+    }
+    greets("name");
+    greets("A");
+
+    //a=10
+    //let a
+    
+    var ab=10
+    var ab=20
+    //function inside a function(variable closer)
+    function adder(x){
+        return function (y){
+            return (x+y)
+        }
+
+    }
+    console.log(adder(4)(5))
+
+    for(var i=0;i<5;i++){
+        setTimeout(function(){console.log(i)},1000);
+    }
+</script>
+</html>
