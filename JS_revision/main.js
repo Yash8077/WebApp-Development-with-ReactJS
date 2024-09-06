@@ -1,0 +1,13 @@
+import Product from "./product.js";
+import Inventory from "./inventory.js";
+var Inventory1=new Inventory();
+var product1=new Product("Milk",50,"Grocery");
+console.log("Product 1 is:"+ JSON.stringify(product1));
+var product2=new Product("Eggs",100,"Grocery");
+Inventory1.addProduct(product1);
+Inventory1.addProduct(product2);
+console.log("Total Value is: "+Inventory1.getTotalValue());
+console.log(product2.getDetails());
+console.log(Inventory1.findProductByName("Milk"));
+product2.applyDiscount(10);
+console.log(product2.getDetails());
