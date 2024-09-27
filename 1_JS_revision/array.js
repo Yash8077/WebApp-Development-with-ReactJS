@@ -101,7 +101,7 @@ for(i of e){
 
 // Use the Array.fill method to fill the array with specific values at specified indexes
 myArray.fill(0, 2, 4);
-console.log(myArray);
+console.log("fill"+myArray);
 
 var marr=[4,2,5,1,7,9]
 console.log(marr.map(Math.round));

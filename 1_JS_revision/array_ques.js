@@ -48,13 +48,12 @@ const result = processData(...students);
 
 document.write("<BR>"+JSON.stringify(result));
 //Class code
-var processData = (students) => {
+var processData2 = (students) => {
     // Step1: filter out students with an avg below 70
     const filterData = students.filter(student => {
         const avg = student.grades.reduce((acc, val) => acc + val, 0);
         return avg <= 70;
     });
-
     // Map the sorted arr to a new arr of objects that only includes the stu
     const mappedStudents = students.map(student => {
         const avgGrade = student.grades.reduce((acc, val) => acc + val, 0);
@@ -69,4 +68,4 @@ const students1 = [
     { name: "Bob", age: 21, grades: [70,80,75], attendance: [true, false, false] },
     { name: "Charlie", age: 22, grades: [60,65,70], attendance: [true, true, true] }
 ];
-document.write(processData(students1));
+document.write(processData2(students1));

@@ -1,8 +1,8 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table';
+import {Table} from 'react-bootstrap/Table';
 const Tablu = () => {
     return (
-        <table className="table">
+        <Table className="table striped-table">
             <thead>
                 <tr>
                     <th>#</th>
@@ -27,7 +27,7 @@ const Tablu = () => {
                     <td>bob.johnson@example.com</td>
                 </tr>
             </tbody>
-        </table>
+        </Table>
     );
 };
 
