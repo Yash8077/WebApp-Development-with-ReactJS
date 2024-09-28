@@ -1,0 +1,20 @@
+.light-mode {
+    background-color: rgb(175, 216, 255);
+    color: rgb(0, 39, 82);
+    border: 2px solid rgb(175, 216, 255);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding-top:20px;
+    padding-bottom: 20px;
+  }
+  
+  .dark-mode {
+    background-color: rgb(0, 39, 82);
+    color: rgb(175, 216, 255);
+    border: 2px solid rgb(0, 39, 82);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding-top:20px;
+    padding-bottom: 20px;
+  }
+  
