@@ -5,12 +5,10 @@ import App from './App.tsx'
 import './index.css'
 import { Greet3 } from './Greet3.tsx';
 import { Greet4 } from './greet4.tsx';
+import SudokuSolver from './ok.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
-    <Greet />
-    <Greet3 />
-    <Greet4 />
-  
+
+    <SudokuSolver />
   </StrictMode>,
 )

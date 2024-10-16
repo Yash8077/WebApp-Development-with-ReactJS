@@ -3,7 +3,7 @@ import { useTheme } from './ThemeContext'; // Import the custom hook
 import "../src/theme.css"
 import Counter from './Counter';
 const ThemedComponent = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();//assigns them the value taken from the context
 
   return (
     <div className={theme === 'light' ? 'light-mode' : 'dark-mode'}>
